@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-weight: 400;
+  src: url("assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-weight: 600;
+  src: url("assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-weight: 800;
+  src: url("assets/fonts/static/HankenGrotesk-ExtraBold.ttf") format("truetype");
+}
+
+:root {
+  /* Primary Colors */
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Primary Colors Gradients */
+  --light-red-10: hsla(0, 100%, 67%, 0.1);
+  --orangey-yellow-10: hsla(39, 100%, 56%, 0.1);
+  --green-teal-10: hsla(166, 100%, 37%, 0.1);
+  --cobalt-blue-10: hsla(234, 85%, 45%, 0.1);
+
+  /* Gradients */
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --light-lavender-50: hsla(241, 100%, 89%, 0.5);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+  --dark-gray-blue-50: hsla(224, 30%, 27%, 0.5);
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* helper */
+
+.bg-light-red {
+  background: var(--light-red-10);
+}
+
+.text-light-red {
+  color: var(--light-red);
+}
+
+.bg-orangey-yellow {
+  background: var(--orangey-yellow-10);
+}
+
+.text-orangey-yellow {
+  color: var(--orangey-yellow);
+}
+
+.bg-green-teal {
+  background: var(--green-teal-10);
+}
+
+.text-green-teal {
+  color: var(--green-teal);
+}
+
+.bg-cobalt-blue {
+  background: var(--cobalt-blue-10);
+}
+
+.text-cobalt-blue {
+  color: var(--cobalt-blue);
+}
+
+.text-dark-gray-blue {
+  color: var(--dark-gray-blue);
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-400 {
+  font-weight: 400;
+}
+
+.text-dark-gray-blue-50 {
+  color: var(--dark-gray-blue-50);
+}
+
+.text-light-lavender-50 {
+  color: var(--light-lavender-50);
+}
+
+/*  */
+
+.container {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 720px) {
+  /* modal logic */
+  .results-summary {
+    position: absolute;
+    width: 700px;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 32px;
+  background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.result-title {
+  color: var(--pale-blue);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.result-display {
+  display: grid;
+  border-radius: 100%;
+  justify-items: center;
+  align-content: center;
+  gap: 8px;
+  width: 140px;
+  height: 140px;
+  margin-top: 16px;
+  background: linear-gradient(var(--violet-blue), var(--persian-blue));
+}
+
+.result-display-score {
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.result-display-total-score {
+  color: var(--light-lavender-50);
+  font-size: 16px;
+}
+
+.result-evaluation-title {
+  color: var(--white);
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.result-evaluation-message {
+  color: var(--light-lavender);
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 36px;
+}
+
+.summary {
+  margin-top: 24px;
+  padding: 0 32px;
+}
+
+.summary-title {
+  margin-bottom: 32px;
+  font-size: 18px;
+}
+
+.summary-list {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.summary-item {
+  border-radius: 8px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, auto) 1fr;
+  gap: 8px;
+  justify-items: end;
+  align-items: center;
+}
+
+.summary-button {
+  width: 100%;
+  border: 0;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+  font-size: 16px;
+}

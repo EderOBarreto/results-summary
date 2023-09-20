@@ -4,65 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="index.css" />
 
     <title>Frontend Mentor | Results summary component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <main>
-      <section>
-        <h1>Your Result</h1>
-        <div>
-          <span>76</span>
-          <span> of 100</span>
-        </div>
-        <h2>Great</h2>
-        <p>
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
-      </section>
-      <section>
-        <h3>Summary</h3>
+    <main class="container">
+      <article class="results-summary">
+        <section class="result">
+          <h1 class="result-title">Your Result</h1>
+          <div class="result-display">
+            <span class="result-display-score">76</span>
+            <span class="result-display-total-score"> of 100</span>
+          </div>
+          <h2 class="result-evaluation-title">Great</h2>
+          <p class="result-evaluation-message">
+            You scored higher than 65% of the <br />
+            people who have taken these tests.
+          </p>
+        </section>
+        <section class="summary">
+          <h3 class="summary-title text-dark-gray-blue">Summary</h3>
+          <ul class="summary-list">
+            <li class="summary-item bg-light-red text-light-red">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt="Reaction Icon"
+              />
+              Reaction
+              <div class="text-dark-gray-blue text-bold">
+                80 <span class="text-dark-gray-blue-50 text-400">/ 100</span>
+              </div>
+            </li>
 
-        <p>
-          Reaction
-          <span>80 / 100</span>
-        </p>
+            <li class="summary-item bg-orangey-yellow text-orangey-yellow">
+              <img src="./assets/images/icon-memory.svg" alt="Memory Icon" />
+              Memory
+              <div class="text-dark-gray-blue text-bold">
+                92 <span class="text-dark-gray-blue-50 text-400">/ 100</span>
+              </div>
+            </li>
 
-        <p>
-          Memory
-          <span>92 / 100</span>
-        </p>
+            <li class="summary-item bg-green-teal text-green-teal">
+              <img src="./assets/images/icon-verbal.svg" alt="Verbal Icon" />
+              Verbal
+              <div class="text-dark-gray-blue text-bold">
+                61 <span class="text-dark-gray-blue-50 text-400">/ 100</span>
+              </div>
+            </li>
 
-        <p>
-          Verbal
-          <span>61 / 100</span>
-        </p>
-
-        <p>
-          Visual
-          <span>72 / 100</span>
-        </p>
-      </section>
-
-      <button>Continue</button>
+            <li class="summary-item bg-cobalt-blue text-cobalt-blue">
+              <img src="./assets/images/icon-visual.svg" alt="Visual Icon" />
+              Visual
+              <div class="text-dark-gray-blue text-bold">
+                72 <span class="text-dark-gray-blue-50 text-400">/ 100</span>
+              </div>
+            </li>
+          </ul>
+          <button class="summary-button">Continue</button>
+        </section>
+      </article>
     </main>
 
     <!-- <div class="attribution">
