@@ -11,6 +11,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body class="page">
@@ -28,35 +29,7 @@
       </section>
       <section class="summary">
         <h3 class="summary__title text-dark-gray-blue">Summary</h3>
-        <ul class="summary__list">
-          <li class="summary__list-item summary__list-item--reaction">
-            <img src="./assets/images/icon-reaction.svg" alt="Reaction Icon" />
-            Reaction
-            <div class="summary__item-score">80</div>
-            <span class="summary__item-max-score">/ 100</span>
-          </li>
-
-          <li class="summary__list-item summary__list-item--memory">
-            <img src="./assets/images/icon-memory.svg" alt="Memory Icon" />
-            Memory
-            <div class="summary__item-score">92</div>
-            <span class="summary__item-max-score">/ 100</span>
-          </li>
-
-          <li class="summary__list-item summary__list-item--verbal">
-            <img src="./assets/images/icon-verbal.svg" alt="Verbal Icon" />
-            Verbal
-            <div class="summary__item-score">61</div>
-            <span class="summary__item-max-score">/ 100</span>
-          </li>
-
-          <li class="summary__list-item summary__list-item--visual">
-            <img src="./assets/images/icon-visual.svg" alt="Visual Icon" />
-            Visual
-            <div class="summary__item-score">72</div>
-            <span class="summary__item-max-score">/ 100</span>
-          </li>
-        </ul>
+        <ul id="list" class="summary__list"></ul>
         <button class="button">Continue</button>
       </section>
     </article>
