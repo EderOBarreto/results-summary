@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="icon"
       type="image/png"
@@ -17,71 +11,61 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="index.css" />
-
     <title>Frontend Mentor | Results summary component</title>
   </head>
-  <body>
-    <div class="results-modal">
-      <article class="results-summary">
-        <section class="result">
-          <h1 class="result-title">Your Result</h1>
-          <div class="result-display">
-            <span class="result-display-score">76</span>
-            <span class="result-display-total-score"> of 100</span>
-          </div>
-          <h2 class="result-evaluation-title">Great</h2>
-          <p class="result-evaluation-message">
-            You scored higher than 65% of the people who have taken these tests.
-          </p>
-        </section>
-        <section class="summary">
-          <h3 class="summary-title text-dark-gray-blue">Summary</h3>
-          <ul class="summary-list">
-            <li class="summary-item bg-light-red text-light-red">
-              <img
-                src="./assets/images/icon-reaction.svg"
-                alt="Reaction Icon"
-              />
-              Reaction
-              <div class="text-dark-gray-blue text-bold">
-                80 <span class="text-dark-gray-blue-50 text-400">/ 100</span>
-              </div>
-            </li>
+  <body class="page">
+    <article class="page__inner">
+      <section class="result">
+        <h1 class="result__title">Your Result</h1>
+        <div class="result__display">
+          <span class="result__display__score">76</span>
+          <span class="result__display__total-score"> of 100</span>
+        </div>
+        <h2 class="result__evaluation-title">Great</h2>
+        <p class="result__evaluation-message">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+      <section class="summary">
+        <h3 class="summary__title text-dark-gray-blue">Summary</h3>
+        <ul class="summary__list">
+          <li class="summary__list-item summary__list-item--reaction">
+            <img src="./assets/images/icon-reaction.svg" alt="Reaction Icon" />
+            Reaction
+            <div class="summary__item-score">80</div>
+            <span class="summary__item-max-score">/ 100</span>
+          </li>
 
-            <li class="summary-item bg-orangey-yellow text-orangey-yellow">
-              <img src="./assets/images/icon-memory.svg" alt="Memory Icon" />
-              Memory
-              <div class="text-dark-gray-blue text-bold">
-                92 <span class="text-dark-gray-blue-50 text-400">/ 100</span>
-              </div>
-            </li>
+          <li class="summary__list-item summary__list-item--memory">
+            <img src="./assets/images/icon-memory.svg" alt="Memory Icon" />
+            Memory
+            <div class="summary__item-score">92</div>
+            <span class="summary__item-max-score">/ 100</span>
+          </li>
 
-            <li class="summary-item bg-green-teal text-green-teal">
-              <img src="./assets/images/icon-verbal.svg" alt="Verbal Icon" />
-              Verbal
-              <div class="text-dark-gray-blue text-bold">
-                61 <span class="text-dark-gray-blue-50 text-400">/ 100</span>
-              </div>
-            </li>
+          <li class="summary__list-item summary__list-item--verbal">
+            <img src="./assets/images/icon-verbal.svg" alt="Verbal Icon" />
+            Verbal
+            <div class="summary__item-score">61</div>
+            <span class="summary__item-max-score">/ 100</span>
+          </li>
 
-            <li class="summary-item bg-cobalt-blue text-cobalt-blue">
-              <img src="./assets/images/icon-visual.svg" alt="Visual Icon" />
-              Visual
-              <div class="text-dark-gray-blue text-bold">
-                72 <span class="text-dark-gray-blue-50 text-400">/ 100</span>
-              </div>
-            </li>
-          </ul>
-          <button class="summary-button">Continue</button>
-        </section>
-      </article>
-    </div>
+          <li class="summary__list-item summary__list-item--visual">
+            <img src="./assets/images/icon-visual.svg" alt="Visual Icon" />
+            Visual
+            <div class="summary__item-score">72</div>
+            <span class="summary__item-max-score">/ 100</span>
+          </li>
+        </ul>
+        <button class="button">Continue</button>
+      </section>
+    </article>
 
-    <!-- <div class="attribution">
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      >. Coded by <a href="https://github.com/EderOBarreto">ederob</a>.
+    </div>
   </body>
 </html>
