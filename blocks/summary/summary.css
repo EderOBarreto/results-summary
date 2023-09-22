@@ -1,10 +1,8 @@
-.summary {
-  padding: 0 32px;
-}
-
 .summary__title {
+  font-weight: 600;
   margin-bottom: 32px;
   font-size: 18px;
+  color: var(--dark-gray-blue);
 }
 
 .summary__list {
