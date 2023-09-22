@@ -15,6 +15,7 @@ fetch('data.json')
 
             const img = document.createElement('img')
             img.src = el.icon
+            img.alt = el.category
             item.append(img)
 
             item.append(el.category)
